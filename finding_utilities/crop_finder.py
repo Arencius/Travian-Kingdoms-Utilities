@@ -37,15 +37,3 @@ class CropFinder(Finder):
 
     def closest_crops(self, valleys):
         super().closest(valleys)
-
-'''
-cf = CropFinder('XDD')
-found_cf = cf.find()
-for x in found_cf:
-    print(x)
-'''
-#cf = CropFinder('XDD')
-#found_cf = cf.find()
-#for x in cf.find():
-#    print(x)
-#cf.closest_crops(list(found_cf))

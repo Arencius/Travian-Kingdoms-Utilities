@@ -48,6 +48,3 @@ class Finder:
 
         for d, c in result:
             print(f'Coordinates: {c}\tDistance: {d}')
-
-# f = Finder('XDD')
-# print(f.distance((13,24)))
