@@ -1,0 +1,5 @@
+This text file contains informations of clients' actions taken on this account.
+Although it's only for reading purposes, and content of the file does not any changes to the state, 
+please do not make any changes. 
+
+# TODO with adding attacks module
