@@ -2,9 +2,10 @@
 import tkpy
 from data.user_data import DRIVER
 
-MY_VILLAGE_NAME = 'XDD' # temporary constant until I haven't added the possibility to change villages
+MY_VILLAGE_NAME = '' # temporary constant until I haven't added the possibility to change villages
 
 def attacking_village():
+    """ Returns the village from which the attack is sent. """
     villages = tkpy.Villages(DRIVER)
     villages.pull()
 
@@ -26,6 +27,7 @@ class Attack:
         self.village = attacking_village()
 
     def send_attack(self):
+        """ Sends the attack."""
         x,y = self.coordinates
         try:
             self.village.send_attack(x = x,y = y,units = self.troops)
