@@ -1,0 +1,1 @@
+""" Attack list module. """
