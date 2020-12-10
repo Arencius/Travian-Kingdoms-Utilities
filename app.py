@@ -16,12 +16,12 @@ def mainloop():
         user_input = int(input())
 
         if user_input == 1:
-            ef = ElephantFinder('XDD')
+            ef = ElephantFinder('')
             found_ef = list(ef.find())
             ef.closest_elephants(found_ef)
 
         elif user_input == 2:
-            cf = CropFinder('XDD')
+            cf = CropFinder('')
             found_c = list(cf.find())
             cf.closest_crops(found_c)
 
