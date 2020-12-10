@@ -16,7 +16,7 @@ class CropFinder(Finder):
         game_map.pull()
 
         valleys = game_map.gen_abandoned_valley()
-        self.valleys_filtered = list(filter(lambda x: x.coordinate.x > 0 and x.coordinate.y > 0, valleys))
+        self.valleys_filtered = list(filter(lambda x: x.coordinate.x > 0 and x.coordinate.y > 0, valleys)) # todo: filtering it depending on quatter
 
     def distance(self, valley_coords):
         return super().distance(valley_coords)
